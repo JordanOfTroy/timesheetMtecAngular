@@ -12,6 +12,7 @@ import { AnalyticsTableComponent } from './components/analytics-table/analytics-
 import { MaterialsModule } from './modules/materials.module';
 import { FormsModule } from '@angular/forms';
 import { MatTabsModule } from '@angular/material/tabs'
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MatTabsModule } from '@angular/material/tabs'
     BrowserAnimationsModule,
     MaterialsModule,
     FormsModule,
-    MatTabsModule
+    MatTabsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

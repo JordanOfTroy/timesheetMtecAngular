@@ -18,7 +18,10 @@ export class DepartmentsComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.departments = this.departmentsServices.departments;
+    // this.departments = this.departmentsServices.departments;
+    this.departmentsServices.getDepartments().subscribe(departments => {
+      this.departments = departments;
+  });
   }
 
   goToDepartment(departmentId: string): void {
