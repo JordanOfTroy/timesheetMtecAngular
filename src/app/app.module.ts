@@ -11,6 +11,7 @@ import { TopNavbarComponent } from './components/top-navbar/top-navbar.component
 import { AnalyticsTableComponent } from './components/analytics-table/analytics-table.component';
 import { MaterialsModule } from './modules/materials.module';
 import { FormsModule } from '@angular/forms';
+import { MatTabsModule } from '@angular/material/tabs'
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialsModule,
-    FormsModule
+    FormsModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
