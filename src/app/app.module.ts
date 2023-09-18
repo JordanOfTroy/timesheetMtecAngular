@@ -13,6 +13,10 @@ import { MaterialsModule } from './modules/materials.module';
 import { FormsModule } from '@angular/forms';
 import { MatTabsModule } from '@angular/material/tabs'
 import { HttpClientModule } from '@angular/common/http';
+import { environment } from './environment';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +34,9 @@ import { HttpClientModule } from '@angular/common/http';
     MaterialsModule,
     FormsModule,
     MatTabsModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
